@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
     <category>MIATT.HW04.jkitzmann</category>
-    <title>SimpleThresholder</title>
+    <title>GradientAD</title>
     <description>
-        Simple image threshold.
+        Difference of Gaussians image edge detection.
     </description>
     <version>97.0</version>
     <documentation-url></documentation-url>
@@ -28,23 +28,19 @@
     </parameters>
 
     <parameters>
-        <label>Thresholding</label>
-        <description>Thresholding parameters</description>
+        <label>anisoParam</label>
+        <description>Gradient based anisotropic diffusion parameters</description>
+        <double>
+            <longflag>conductance</longflag>
+            <label></label>
+        </double>
+        <double>
+            <longflag>timeStep</longflag>
+            <label>Second sigma for gaussian smoothing function. sigma2 should be greater than sigma1 </label>
+        </double>
         <integer>
-            <longflag>lowThreshold</longflag>
-            <label>Lower threshold bound</label>
-        </integer>
-        <integer>
-            <longflag>highThreshold</longflag>
-            <label>Higher threshold bound</label>
-        </integer>
-        <integer>
-            <longflag>insideValue</longflag>
-            <label>Value inside of the threshold band</label>
-        </integer>
-        <integer>
-            <longflag>outsideValue</longflag>
-            <label>Value inside of the threshold band</label>
+                <longflag>iterations</longflag>
+                <label></label>
         </integer>
     </parameters>
 </executable>

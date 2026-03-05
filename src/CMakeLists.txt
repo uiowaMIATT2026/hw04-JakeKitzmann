@@ -1,7 +1,7 @@
 
 add_subdirectory(SimpleThreshold)
-#add_subdirectory(XXX)
-#add_subdirectory(XXX)
-#add_subdirectory(XXX)
+add_subdirectory(Gaussian)
+add_subdirectory(DifferenceOfGaussians)
+add_subdirectory(GradientAD)
 #add_subdirectory(XXX)
 #add_subdirectory(XXX)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
     <category>MIATT.HW04.jkitzmann</category>
-    <title>SimpleThresholder</title>
+    <title>Gaussian</title>
     <description>
-        Simple image threshold.
+        Gaussian image threshold.
     </description>
     <version>97.0</version>
     <documentation-url></documentation-url>
@@ -28,23 +28,11 @@
     </parameters>
 
     <parameters>
-        <label>Thresholding</label>
-        <description>Thresholding parameters</description>
-        <integer>
-            <longflag>lowThreshold</longflag>
-            <label>Lower threshold bound</label>
-        </integer>
-        <integer>
-            <longflag>highThreshold</longflag>
-            <label>Higher threshold bound</label>
-        </integer>
-        <integer>
-            <longflag>insideValue</longflag>
-            <label>Value inside of the threshold band</label>
-        </integer>
-        <integer>
-            <longflag>outsideValue</longflag>
-            <label>Value inside of the threshold band</label>
-        </integer>
+        <label>Smoothing</label>
+        <description>Smoothing parameters</description>
+        <float>
+            <longflag>sigma</longflag>
+            <label>Sigma for gaussian smoothing function</label>
+        </float>
     </parameters>
 </executable>

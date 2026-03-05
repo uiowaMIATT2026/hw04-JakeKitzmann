@@ -1,16 +1,16 @@
 
-set(SimpleThreshold_SOURCE SimpleThreshold.cxx)
-GENERATECLP(SimpleThreshold_SOURCE SimpleThreshold.xml)
+set(DifferenceOfGaussians_SOURCE DifferenceOfGaussians.cxx)
+GENERATECLP(DifferenceOfGaussians_SOURCE DifferenceOfGaussians.cxx)
 
 
-add_executable(SimpleThreshold_${MYHAWKID} ${SimpleThreshold_SOURCE})
-target_link_libraries(SimpleThreshold_${MYHAWKID} ${ITK_LIBRARIES})
+add_executable(DifferenceOfGaussians_${MYHAWKID} ${DifferenceOfGaussians_SOURCE})
+target_link_libraries(DifferenceOfGaussians_${MYHAWKID} ${ITK_LIBRARIES})
 
 SEMMacroBuildCLI(
-        NAME SimpleThreshold
+        NAME DifferenceOfGaussians
         LOGO_HEADER ${Slicer_SOURCE_DIR}/Resources/NAMICLogo.h
         ADDITIONAL_SRCS
-        SimpleThreshold.cxx
+        DifferenceOfGaussians.cxx
         TARGET_LIBRARIES ModuleDescriptionParser ${ITK_LIBRARIES} vtkTeem MRMLCore SlicerBaseCLI ${VTK_LIBRARIES}
         INCLUDE_DIRECTORIES
         ${vtkTeem_INCLUDE_DIRS}
