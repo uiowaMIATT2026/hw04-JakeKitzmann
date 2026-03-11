@@ -1,0 +1,1 @@
+I found that conductance of 1.25, time step of 0.04, and 10 iterations gives good smoothing without detail loss.

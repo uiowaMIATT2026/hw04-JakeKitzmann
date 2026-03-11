@@ -32,15 +32,15 @@
         <description>Gradient based anisotropic diffusion parameters</description>
         <double>
             <longflag>conductance</longflag>
-            <label></label>
+            <label>conductance</label>
         </double>
         <double>
             <longflag>timeStep</longflag>
-            <label>time steps between iterations</label>
+            <label>time steps</label>
         </double>
         <integer>
             <longflag>iterations</longflag>
-            <label>number of iterations for smoothing</label>
+            <label>number of iterations</label>
         </integer>
     </parameters>
 </executable>

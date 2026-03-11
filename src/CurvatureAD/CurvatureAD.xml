@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
     <category>MIATT.HW04.jkitzmann</category>
-    <title>GradientAD</title>
+    <title>CurvatureAD</title>
     <description>
         Curvature Anisotropic Diffusion
     </description>
@@ -32,15 +32,15 @@
         <description>Curvature based anisotropic diffusion parameters</description>
         <double>
             <longflag>conductance</longflag>
-            <label></label>
+            <label>conductance</label>
         </double>
         <double>
             <longflag>timeStep</longflag>
-            <label>time step between iterations of smoothing </label>
+            <label>time step</label>
         </double>
         <integer>
                 <longflag>iterations</longflag>
-                <label>number of iterations for smoothing</label>
+                <label>number of iterations</label>
         </integer>
     </parameters>
 </executable>
