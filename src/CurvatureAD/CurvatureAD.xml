@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.jkitzmann</category>
+    <title>GradientAD</title>
+    <description>
+        Curvature Anisotropic Diffusion
+    </description>
+    <version>97.0</version>
+    <documentation-url></documentation-url>
+    <license></license>
+    <contributor>Hans J. Johnson</contributor>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image>
+            <longflag>inputVolume</longflag>
+            <label>Input Volume</label>
+            <channel>input</channel>
+            <description>Input volume to be filtered</description>
+        </image>
+        <image>
+            <longflag>outputVolume</longflag>
+            <label>Output Volume</label>
+            <channel>output</channel>
+            <description>Output filtered</description>
+        </image>
+    </parameters>
+
+    <parameters>
+        <label>anisoParam</label>
+        <description>Gradient based anisotropic diffusion parameters</description>
+        <double>
+            <longflag>conductance</longflag>
+            <label></label>
+        </double>
+        <double>
+            <longflag>timeStep</longflag>
+            <label>Second sigma for gaussian smoothing function. sigma2 should be greater than sigma1 </label>
+        </double>
+        <integer>
+                <longflag>iterations</longflag>
+                <label></label>
+        </integer>
+    </parameters>
+</executable>
