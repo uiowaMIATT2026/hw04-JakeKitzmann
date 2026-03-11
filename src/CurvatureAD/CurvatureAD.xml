@@ -29,18 +29,18 @@
 
     <parameters>
         <label>anisoParam</label>
-        <description>Gradient based anisotropic diffusion parameters</description>
+        <description>Curvature based anisotropic diffusion parameters</description>
         <double>
             <longflag>conductance</longflag>
             <label></label>
         </double>
         <double>
             <longflag>timeStep</longflag>
-            <label>Second sigma for gaussian smoothing function. sigma2 should be greater than sigma1 </label>
+            <label>time step between iterations of smoothing </label>
         </double>
         <integer>
                 <longflag>iterations</longflag>
-                <label></label>
+                <label>number of iterations for smoothing</label>
         </integer>
     </parameters>
 </executable>

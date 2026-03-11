@@ -3,7 +3,7 @@
     <category>MIATT.HW04.jkitzmann</category>
     <title>Gaussian</title>
     <description>
-        Gaussian image threshold.
+        Gaussian image smoothing
     </description>
     <version>97.0</version>
     <documentation-url></documentation-url>
