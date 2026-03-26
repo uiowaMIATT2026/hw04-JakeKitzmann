@@ -1,6 +1,0 @@
-# Target labels
- Gaussian
-# Source files and their labels
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/Gaussian/GaussianCLP.h
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/Gaussian/Gaussian.cxx
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/Gaussian/GaussianCLP.h.rule

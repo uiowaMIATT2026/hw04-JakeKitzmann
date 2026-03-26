@@ -1,6 +1,0 @@
-# Target labels
- CurvatureAD
-# Source files and their labels
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/CurvatureAD/CurvatureADCLP.h
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/CurvatureAD/CurvatureAD.cxx
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/CurvatureAD/CurvatureADCLP.h.rule

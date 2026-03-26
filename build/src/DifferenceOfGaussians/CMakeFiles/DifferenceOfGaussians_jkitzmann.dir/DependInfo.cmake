@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/DifferenceOfGaussians/DifferenceOfGaussians.cxx" "src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/DifferenceOfGaussians.cxx.o" "gcc" "src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/DifferenceOfGaussians.cxx.o.d"
+  "/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/src/DifferenceOfGaussians/DifferenceOfGaussians.cxx" "src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/DifferenceOfGaussians.cxx.o" "gcc" "src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/DifferenceOfGaussians.cxx.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

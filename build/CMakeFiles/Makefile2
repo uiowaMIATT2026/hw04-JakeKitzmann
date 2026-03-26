@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann
+CMAKE_SOURCE_DIR = /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build
+CMAKE_BINARY_DIR = /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -106,8 +106,6 @@ src/clean: src/CurvatureAD/clean
 
 # Recursive "all" directory target.
 src/CurvatureAD/all: src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/all
-src/CurvatureAD/all: src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/all
-src/CurvatureAD/all: src/CurvatureAD/CMakeFiles/CurvatureAD.dir/all
 .PHONY : src/CurvatureAD/all
 
 # Recursive "preinstall" directory target.
@@ -116,8 +114,6 @@ src/CurvatureAD/preinstall:
 
 # Recursive "clean" directory target.
 src/CurvatureAD/clean: src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/clean
-src/CurvatureAD/clean: src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/clean
-src/CurvatureAD/clean: src/CurvatureAD/CMakeFiles/CurvatureAD.dir/clean
 .PHONY : src/CurvatureAD/clean
 
 #=============================================================================
@@ -125,8 +121,6 @@ src/CurvatureAD/clean: src/CurvatureAD/CMakeFiles/CurvatureAD.dir/clean
 
 # Recursive "all" directory target.
 src/DifferenceOfGaussians/all: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/all
-src/DifferenceOfGaussians/all: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/all
-src/DifferenceOfGaussians/all: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/all
 .PHONY : src/DifferenceOfGaussians/all
 
 # Recursive "preinstall" directory target.
@@ -135,8 +129,6 @@ src/DifferenceOfGaussians/preinstall:
 
 # Recursive "clean" directory target.
 src/DifferenceOfGaussians/clean: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/clean
-src/DifferenceOfGaussians/clean: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/clean
-src/DifferenceOfGaussians/clean: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/clean
 .PHONY : src/DifferenceOfGaussians/clean
 
 #=============================================================================
@@ -144,8 +136,6 @@ src/DifferenceOfGaussians/clean: src/DifferenceOfGaussians/CMakeFiles/Difference
 
 # Recursive "all" directory target.
 src/Gaussian/all: src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/all
-src/Gaussian/all: src/Gaussian/CMakeFiles/GaussianLib.dir/all
-src/Gaussian/all: src/Gaussian/CMakeFiles/Gaussian.dir/all
 .PHONY : src/Gaussian/all
 
 # Recursive "preinstall" directory target.
@@ -154,8 +144,6 @@ src/Gaussian/preinstall:
 
 # Recursive "clean" directory target.
 src/Gaussian/clean: src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/clean
-src/Gaussian/clean: src/Gaussian/CMakeFiles/GaussianLib.dir/clean
-src/Gaussian/clean: src/Gaussian/CMakeFiles/Gaussian.dir/clean
 .PHONY : src/Gaussian/clean
 
 #=============================================================================
@@ -163,8 +151,6 @@ src/Gaussian/clean: src/Gaussian/CMakeFiles/Gaussian.dir/clean
 
 # Recursive "all" directory target.
 src/GradientAD/all: src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/all
-src/GradientAD/all: src/GradientAD/CMakeFiles/GradientADLib.dir/all
-src/GradientAD/all: src/GradientAD/CMakeFiles/GradientAD.dir/all
 .PHONY : src/GradientAD/all
 
 # Recursive "preinstall" directory target.
@@ -173,8 +159,6 @@ src/GradientAD/preinstall:
 
 # Recursive "clean" directory target.
 src/GradientAD/clean: src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/clean
-src/GradientAD/clean: src/GradientAD/CMakeFiles/GradientADLib.dir/clean
-src/GradientAD/clean: src/GradientAD/CMakeFiles/GradientAD.dir/clean
 .PHONY : src/GradientAD/clean
 
 #=============================================================================
@@ -182,8 +166,6 @@ src/GradientAD/clean: src/GradientAD/CMakeFiles/GradientAD.dir/clean
 
 # Recursive "all" directory target.
 src/SimpleThreshold/all: src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/all
-src/SimpleThreshold/all: src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/all
-src/SimpleThreshold/all: src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/all
 .PHONY : src/SimpleThreshold/all
 
 # Recursive "preinstall" directory target.
@@ -192,8 +174,6 @@ src/SimpleThreshold/preinstall:
 
 # Recursive "clean" directory target.
 src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/clean
-src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/clean
-src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/clean
 .PHONY : src/SimpleThreshold/clean
 
 #=============================================================================
@@ -203,14 +183,14 @@ src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/cl
 src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=38,39,40 "Built target SimpleThreshold_jkitzmann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles --progress-num=13,14,15 "Built target SimpleThreshold_jkitzmann"
 .PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/all
 
 # Build rule for subdir invocation for target.
 src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -223,72 +203,20 @@ src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/clean:
 .PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/clean
 
 #=============================================================================
-# Target rules for target src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir
-
-# All Build rule for target.
-src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=35,36,37 "Built target SimpleThresholdLib"
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/all
-
-# Build rule for subdir invocation for target.
-src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/rule
-
-# Convenience name for target.
-SimpleThresholdLib: src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/rule
-.PHONY : SimpleThresholdLib
-
-# clean rule for target.
-src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/clean
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/clean
-
-#=============================================================================
-# Target rules for target src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir
-
-# All Build rule for target.
-src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/all: src/SimpleThreshold/CMakeFiles/SimpleThresholdLib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=33,34 "Built target SimpleThreshold"
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/all
-
-# Build rule for subdir invocation for target.
-src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/rule
-
-# Convenience name for target.
-SimpleThreshold: src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/rule
-.PHONY : SimpleThreshold
-
-# clean rule for target.
-src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/clean
-.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold.dir/clean
-
-#=============================================================================
 # Target rules for target src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir
 
 # All Build rule for target.
 src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/build.make src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/build.make src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=22,23,24 "Built target Gaussian_jkitzmann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles --progress-num=7,8,9 "Built target Gaussian_jkitzmann"
 .PHONY : src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/all
 
 # Build rule for subdir invocation for target.
 src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -301,72 +229,20 @@ src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/clean:
 .PHONY : src/Gaussian/CMakeFiles/Gaussian_jkitzmann.dir/clean
 
 #=============================================================================
-# Target rules for target src/Gaussian/CMakeFiles/GaussianLib.dir
-
-# All Build rule for target.
-src/Gaussian/CMakeFiles/GaussianLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/GaussianLib.dir/build.make src/Gaussian/CMakeFiles/GaussianLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/GaussianLib.dir/build.make src/Gaussian/CMakeFiles/GaussianLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=19,20,21 "Built target GaussianLib"
-.PHONY : src/Gaussian/CMakeFiles/GaussianLib.dir/all
-
-# Build rule for subdir invocation for target.
-src/Gaussian/CMakeFiles/GaussianLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Gaussian/CMakeFiles/GaussianLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/Gaussian/CMakeFiles/GaussianLib.dir/rule
-
-# Convenience name for target.
-GaussianLib: src/Gaussian/CMakeFiles/GaussianLib.dir/rule
-.PHONY : GaussianLib
-
-# clean rule for target.
-src/Gaussian/CMakeFiles/GaussianLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/GaussianLib.dir/build.make src/Gaussian/CMakeFiles/GaussianLib.dir/clean
-.PHONY : src/Gaussian/CMakeFiles/GaussianLib.dir/clean
-
-#=============================================================================
-# Target rules for target src/Gaussian/CMakeFiles/Gaussian.dir
-
-# All Build rule for target.
-src/Gaussian/CMakeFiles/Gaussian.dir/all: src/Gaussian/CMakeFiles/GaussianLib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/Gaussian.dir/build.make src/Gaussian/CMakeFiles/Gaussian.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/Gaussian.dir/build.make src/Gaussian/CMakeFiles/Gaussian.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=17,18 "Built target Gaussian"
-.PHONY : src/Gaussian/CMakeFiles/Gaussian.dir/all
-
-# Build rule for subdir invocation for target.
-src/Gaussian/CMakeFiles/Gaussian.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Gaussian/CMakeFiles/Gaussian.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/Gaussian/CMakeFiles/Gaussian.dir/rule
-
-# Convenience name for target.
-Gaussian: src/Gaussian/CMakeFiles/Gaussian.dir/rule
-.PHONY : Gaussian
-
-# clean rule for target.
-src/Gaussian/CMakeFiles/Gaussian.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Gaussian/CMakeFiles/Gaussian.dir/build.make src/Gaussian/CMakeFiles/Gaussian.dir/clean
-.PHONY : src/Gaussian/CMakeFiles/Gaussian.dir/clean
-
-#=============================================================================
 # Target rules for target src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir
 
 # All Build rule for target.
 src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=14,15,16 "Built target DifferenceOfGaussians_jkitzmann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles --progress-num=4,5,6 "Built target DifferenceOfGaussians_jkitzmann"
 .PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/all
 
 # Build rule for subdir invocation for target.
 src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -379,72 +255,20 @@ src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/clean:
 .PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians_jkitzmann.dir/clean
 
 #=============================================================================
-# Target rules for target src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir
-
-# All Build rule for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=11,12,13 "Built target DifferenceOfGaussiansLib"
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/all
-
-# Build rule for subdir invocation for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/rule
-
-# Convenience name for target.
-DifferenceOfGaussiansLib: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/rule
-.PHONY : DifferenceOfGaussiansLib
-
-# clean rule for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/clean
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/clean
-
-#=============================================================================
-# Target rules for target src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir
-
-# All Build rule for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/all: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussiansLib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=9,10 "Built target DifferenceOfGaussians"
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/all
-
-# Build rule for subdir invocation for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/rule
-
-# Convenience name for target.
-DifferenceOfGaussians: src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/rule
-.PHONY : DifferenceOfGaussians
-
-# clean rule for target.
-src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/build.make src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/clean
-.PHONY : src/DifferenceOfGaussians/CMakeFiles/DifferenceOfGaussians.dir/clean
-
-#=============================================================================
 # Target rules for target src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir
 
 # All Build rule for target.
 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=30,31,32 "Built target GradientAD_jkitzmann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles --progress-num=10,11,12 "Built target GradientAD_jkitzmann"
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/all
 
 # Build rule for subdir invocation for target.
 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -457,72 +281,20 @@ src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/clean:
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/clean
 
 #=============================================================================
-# Target rules for target src/GradientAD/CMakeFiles/GradientADLib.dir
-
-# All Build rule for target.
-src/GradientAD/CMakeFiles/GradientADLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=27,28,29 "Built target GradientADLib"
-.PHONY : src/GradientAD/CMakeFiles/GradientADLib.dir/all
-
-# Build rule for subdir invocation for target.
-src/GradientAD/CMakeFiles/GradientADLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientADLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/GradientAD/CMakeFiles/GradientADLib.dir/rule
-
-# Convenience name for target.
-GradientADLib: src/GradientAD/CMakeFiles/GradientADLib.dir/rule
-.PHONY : GradientADLib
-
-# clean rule for target.
-src/GradientAD/CMakeFiles/GradientADLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/clean
-.PHONY : src/GradientAD/CMakeFiles/GradientADLib.dir/clean
-
-#=============================================================================
-# Target rules for target src/GradientAD/CMakeFiles/GradientAD.dir
-
-# All Build rule for target.
-src/GradientAD/CMakeFiles/GradientAD.dir/all: src/GradientAD/CMakeFiles/GradientADLib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=25,26 "Built target GradientAD"
-.PHONY : src/GradientAD/CMakeFiles/GradientAD.dir/all
-
-# Build rule for subdir invocation for target.
-src/GradientAD/CMakeFiles/GradientAD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientAD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/GradientAD/CMakeFiles/GradientAD.dir/rule
-
-# Convenience name for target.
-GradientAD: src/GradientAD/CMakeFiles/GradientAD.dir/rule
-.PHONY : GradientAD
-
-# clean rule for target.
-src/GradientAD/CMakeFiles/GradientAD.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/clean
-.PHONY : src/GradientAD/CMakeFiles/GradientAD.dir/clean
-
-#=============================================================================
 # Target rules for target src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir
 
 # All Build rule for target.
 src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=6,7,8 "Built target CurvatureAD_jkitzmann"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles --progress-num=1,2,3 "Built target CurvatureAD_jkitzmann"
 .PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/all
 
 # Build rule for subdir invocation for target.
 src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -533,58 +305,6 @@ CurvatureAD_jkitzmann: src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/rule
 src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/clean
 .PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_jkitzmann.dir/clean
-
-#=============================================================================
-# Target rules for target src/CurvatureAD/CMakeFiles/CurvatureADLib.dir
-
-# All Build rule for target.
-src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=3,4,5 "Built target CurvatureADLib"
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/all
-
-# Build rule for subdir invocation for target.
-src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/rule
-
-# Convenience name for target.
-CurvatureADLib: src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/rule
-.PHONY : CurvatureADLib
-
-# clean rule for target.
-src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/clean
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/clean
-
-#=============================================================================
-# Target rules for target src/CurvatureAD/CMakeFiles/CurvatureAD.dir
-
-# All Build rule for target.
-src/CurvatureAD/CMakeFiles/CurvatureAD.dir/all: src/CurvatureAD/CMakeFiles/CurvatureADLib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles --progress-num=1,2 "Built target CurvatureAD"
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD.dir/all
-
-# Build rule for subdir invocation for target.
-src/CurvatureAD/CMakeFiles/CurvatureAD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CurvatureAD/CMakeFiles/CurvatureAD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD.dir/rule
-
-# Convenience name for target.
-CurvatureAD: src/CurvatureAD/CMakeFiles/CurvatureAD.dir/rule
-.PHONY : CurvatureAD
-
-# clean rule for target.
-src/CurvatureAD/CMakeFiles/CurvatureAD.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD.dir/clean
-.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,6 +1,0 @@
-# Target labels
- SimpleThreshold
-# Source files and their labels
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/SimpleThreshold/SimpleThresholdCLP.h
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/SimpleThreshold/SimpleThreshold.cxx
-/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/SimpleThreshold/SimpleThresholdCLP.h.rule

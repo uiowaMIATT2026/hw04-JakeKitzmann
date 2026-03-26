@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/SimpleThreshold/SimpleThreshold.cxx" "src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/SimpleThreshold.cxx.o" "gcc" "src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/SimpleThreshold.cxx.o.d"
+  "/Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/src/SimpleThreshold/SimpleThreshold.cxx" "src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/SimpleThreshold.cxx.o" "gcc" "src/SimpleThreshold/CMakeFiles/SimpleThreshold_jkitzmann.dir/SimpleThreshold.cxx.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann
+CMAKE_SOURCE_DIR = /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build
+CMAKE_BINARY_DIR = /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.28.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,68 +78,23 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.28.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"RuntimeLibraries\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/GradientAD//CMakeFiles/progress.marks
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/CMakeFiles 0
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/src/GradientAD//CMakeFiles/progress.marks
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/clean
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/preinstall
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/preinstall
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule
 
 # Convenience name for target.
@@ -172,44 +127,15 @@ GradientAD_jkitzmann: src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/rule
 
 # fast build rule for target.
 GradientAD_jkitzmann/fast:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build
 .PHONY : GradientAD_jkitzmann/fast
-
-# Convenience name for target.
-src/GradientAD/CMakeFiles/GradientADLib.dir/rule:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientADLib.dir/rule
-.PHONY : src/GradientAD/CMakeFiles/GradientADLib.dir/rule
-
-# Convenience name for target.
-GradientADLib: src/GradientAD/CMakeFiles/GradientADLib.dir/rule
-.PHONY : GradientADLib
-
-# fast build rule for target.
-GradientADLib/fast:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/build
-.PHONY : GradientADLib/fast
-
-# Convenience name for target.
-src/GradientAD/CMakeFiles/GradientAD.dir/rule:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GradientAD/CMakeFiles/GradientAD.dir/rule
-.PHONY : src/GradientAD/CMakeFiles/GradientAD.dir/rule
-
-# Convenience name for target.
-GradientAD: src/GradientAD/CMakeFiles/GradientAD.dir/rule
-.PHONY : GradientAD
-
-# fast build rule for target.
-GradientAD/fast:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/build
-.PHONY : GradientAD/fast
 
 GradientAD.o: GradientAD.cxx.o
 .PHONY : GradientAD.o
 
 # target to build an object file
 GradientAD.cxx.o:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.o
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/GradientAD.cxx.o
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.o
 .PHONY : GradientAD.cxx.o
 
 GradientAD.i: GradientAD.cxx.i
@@ -217,8 +143,7 @@ GradientAD.i: GradientAD.cxx.i
 
 # target to preprocess a source file
 GradientAD.cxx.i:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.i
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/GradientAD.cxx.i
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.i
 .PHONY : GradientAD.cxx.i
 
 GradientAD.s: GradientAD.cxx.s
@@ -226,33 +151,8 @@ GradientAD.s: GradientAD.cxx.s
 
 # target to generate assembly for a file
 GradientAD.cxx.s:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.s
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientADLib.dir/build.make src/GradientAD/CMakeFiles/GradientADLib.dir/GradientAD.cxx.s
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/build.make src/GradientAD/CMakeFiles/GradientAD_jkitzmann.dir/GradientAD.cxx.s
 .PHONY : GradientAD.cxx.s
-
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.o: nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.o
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.o
-
-# target to build an object file
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.o:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.o
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.o
-
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.i: nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.i
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.i
-
-# target to preprocess a source file
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.i:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.i
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.i
-
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.s: nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.s
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.s
-
-# target to generate assembly for a file
-nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.s:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD.dir/build.make src/GradientAD/CMakeFiles/GradientAD.dir/nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.s
-.PHONY : nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx.s
 
 # Help Target
 help:
@@ -261,20 +161,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... GradientAD"
-	@echo "... GradientADLib"
 	@echo "... GradientAD_jkitzmann"
 	@echo "... GradientAD.o"
 	@echo "... GradientAD.i"
 	@echo "... GradientAD.s"
-	@echo "... nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.o"
-	@echo "... nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.i"
-	@echo "... nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.s"
 .PHONY : help
 
 
@@ -286,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/jacob_kitz/Coursework/ECE5490/hw04-JakeKitzmann/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
