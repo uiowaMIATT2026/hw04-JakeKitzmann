@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Gaussian"
+		],
+		"name" : "Gaussian"
+	}
+}

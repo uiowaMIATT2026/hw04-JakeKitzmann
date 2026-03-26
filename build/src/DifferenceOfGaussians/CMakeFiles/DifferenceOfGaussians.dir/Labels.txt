@@ -1,0 +1,4 @@
+# Target labels
+ DifferenceOfGaussians
+# Source files and their labels
+/nfsscratch/Users/jkitzmann/SlicerExecutionModel/CMake/SEMCommandLineLibraryWrapper.cxx

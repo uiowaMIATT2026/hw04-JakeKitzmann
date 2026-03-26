@@ -1,0 +1,22 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/GradientAD/GradientADCLP.h"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/GradientAD/GradientAD.cxx"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/GradientAD/GradientADCLP.h.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"GradientAD"
+		],
+		"name" : "GradientADLib"
+	}
+}

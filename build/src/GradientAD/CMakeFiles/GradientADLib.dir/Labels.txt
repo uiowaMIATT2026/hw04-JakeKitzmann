@@ -1,0 +1,6 @@
+# Target labels
+ GradientAD
+# Source files and their labels
+/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/GradientAD/GradientADCLP.h
+/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/GradientAD/GradientAD.cxx
+/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/GradientAD/GradientADCLP.h.rule

@@ -1,0 +1,22 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/SimpleThreshold/SimpleThresholdCLP.h"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/SimpleThreshold/SimpleThreshold.cxx"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/SimpleThreshold/SimpleThresholdCLP.h.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"SimpleThreshold"
+		],
+		"name" : "SimpleThresholdLib"
+	}
+}

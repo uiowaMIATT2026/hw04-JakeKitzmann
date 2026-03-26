@@ -1,0 +1,22 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/CurvatureAD/CurvatureADCLP.h"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/CurvatureAD/CurvatureAD.cxx"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/CurvatureAD/CurvatureADCLP.h.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"CurvatureAD"
+		],
+		"name" : "CurvatureADLib"
+	}
+}

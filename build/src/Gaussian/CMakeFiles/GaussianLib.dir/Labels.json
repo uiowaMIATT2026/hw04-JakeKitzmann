@@ -1,0 +1,22 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/Gaussian/GaussianCLP.h"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/Gaussian/Gaussian.cxx"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/Gaussian/GaussianCLP.h.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Gaussian"
+		],
+		"name" : "GaussianLib"
+	}
+}

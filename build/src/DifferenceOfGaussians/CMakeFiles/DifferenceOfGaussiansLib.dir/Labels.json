@@ -1,0 +1,22 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/DifferenceOfGaussians/DifferenceOfGaussiansCLP.h"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/src/DifferenceOfGaussians/DifferenceOfGaussians.cxx"
+		},
+		{
+			"file" : "/nfsscratch/Users/jkitzmann/hws/hw04-JakeKitzmann/build/src/DifferenceOfGaussians/DifferenceOfGaussiansCLP.h.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"DifferenceOfGaussians"
+		],
+		"name" : "DifferenceOfGaussiansLib"
+	}
+}
