@@ -24,6 +24,11 @@ int main (int argc, char * argv[])
     return EXIT_FAILURE;
   }
 
+  if(sigma1 <= 0 || sigma2 <= 0){
+    std::cout <<"Sigma1 (" << sigma1 << ") or Sigma2 (" << sigma2 << ") is less than zero" << std::endl;
+    return EXIT_FAILURE;
+  }
+
   using PixelType = short;
   constexpr int Dimension = 3;
   using ImageType = itk::Image<PixelType, Dimension>;
