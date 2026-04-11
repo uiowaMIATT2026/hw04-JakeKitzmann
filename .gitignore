@@ -40,4 +40,8 @@ CMakeCache.txt
 CMakeFiles/*
 crash*
 
+cmake-build-debug/*
+*.idea*
+build/*
+
 Testing/Temporary/LastTest.log

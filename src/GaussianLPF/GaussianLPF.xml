@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.jkitzmann</category>
+    <title>Gaussian</title>
+    <description>
+        Gaussian image smoothing
+    </description>
+    <version>0.0.1</version>
+    <documentation-url></documentation-url>
+    <license></license>
+    <contributor>Hans J. Johnson, Jacob J. Kitzmann</contributor>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image>
+            <name>inputVolume</name>
+            <longflag>inputVolume</longflag>
+            <label>Input Volume</label>
+            <channel>input</channel>
+            <description>Input volume to be filtered</description>
+        </image>
+        <image>
+            <name>outputVolume</name>
+            <longflag>outputVolume</longflag>
+            <label>Output Volume</label>
+            <channel>output</channel>
+            <description>Output filtered volume</description>
+        </image>
+    </parameters>
+
+    <parameters>
+        <label>Smoothing</label>
+        <description>Smoothing parameters</description>
+        <float>
+            <name>sigma</name>
+            <longflag>sigma</longflag>
+            <label>Sigma</label>
+            <description>Sigma value for gaussian low pass filter. Higher sigma is smoother</description>
+        </float>
+    </parameters>
+</executable>
