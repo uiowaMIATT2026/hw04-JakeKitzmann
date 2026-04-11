@@ -5,25 +5,27 @@
     <description>
         Curvature Anisotropic Diffusion
     </description>
-    <version>97.0</version>
+    <version>0.0.1</version>
     <documentation-url></documentation-url>
     <license></license>
-    <contributor>Hans J. Johnson</contributor>
+    <contributor>Hans J. Johnson, Jacob J. Kitzmann</contributor>
 
     <parameters>
         <label>IO</label>
         <description>Input/output parameters</description>
         <image>
+            <name>inputVolume</name>
             <longflag>inputVolume</longflag>
             <label>Input Volume</label>
             <channel>input</channel>
             <description>Input volume to be filtered</description>
         </image>
         <image>
+            <name>outputVolume</name>
             <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
-            <description>Output filtered</description>
+            <description>Filtered output volume</description>
         </image>
     </parameters>
 
@@ -31,16 +33,23 @@
         <label>anisoParam</label>
         <description>Curvature based anisotropic diffusion parameters</description>
         <double>
+            <name>conductance</name>
             <longflag>conductance</longflag>
             <label>conductance</label>
+            <description>The lower the value of conductance, the more strongly the filter preserves the original image's light/dark boundaries</description>
         </double>
         <double>
+            <name>timeStep</name>
             <longflag>timeStep</longflag>
             <label>time step</label>
+            <description>Adjust delta t in the equation given at https://docs.itk.org/projects/doxygen/en/stable/classitk_1_1AnisotropicDiffusionFunction.html. 
+            Stable values for most 2D and 3D functions are 0.125 and 0.0625, respectively.</description>
         </double>
         <integer>
-                <longflag>iterations</longflag>
-                <label>number of iterations</label>
+            <name>iterations</name>
+            <longflag>iterations</longflag>
+            <label>Number of iterations</label>
+            <description>How many times to filter the image sequentially with the anisotropic diffusion filter.</description>
         </integer>
     </parameters>
 </executable>
