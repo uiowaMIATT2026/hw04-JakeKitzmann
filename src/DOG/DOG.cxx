@@ -9,6 +9,7 @@
 #include <itkImageFileWriter.h>
 #include <itkImageFileReader.h>
 #include <itkSubtractImageFilter.h>
+#include <itkRescaleIntensityImageFilter.h>
 
 int main (int argc, char * argv[])
 {
@@ -53,10 +54,17 @@ int main (int argc, char * argv[])
   subtract->SetInput1(filter1->GetOutput());
   subtract->SetInput2(filter2->GetOutput());
 
+  // https://examples.itk.org/src/filtering/imageintensity/rescaleintensity/documentation
+  using RescaleFilterType = itk::RescaleIntensityImageFilter<ImageType, ImageType>;
+  auto rescale = RescaleFilterType::New();
+  rescale->SetInput(subtract->GetOutput());
+  rescale->SetOutputMinimum(0);
+  rescale->SetOutputMaximum(255);
+
   using WriterType = itk::ImageFileWriter<ImageType>;
   auto writer = WriterType::New();
 
-  writer->SetInput(subtract->GetOutput());
+  writer->SetInput(rescale->GetOutput());
   writer->SetFileName(outputVolume);
 
   try {
