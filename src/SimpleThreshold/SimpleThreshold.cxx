@@ -15,6 +15,11 @@ int main (int argc, char * argv[])
   std::cout << "The input volume is: " << inputVolume << std::endl;
   std::cout << "The output volume is: " << outputVolume << std::endl;
 
+  if(lowThreshold >= highThreshold){
+    std::cout << "Low threshold (" << lowThreshold << ") is greater than or equal to high threshold (" << highThreshold << ")" << std::endl;
+    return EXIT_FAILURE;
+  }
+
   using PixelType = short;
   constexpr int Dimension = 3;
   using ImageType = itk::Image<PixelType, Dimension>;
