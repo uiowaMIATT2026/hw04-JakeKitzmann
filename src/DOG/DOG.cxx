@@ -30,7 +30,7 @@ int main (int argc, char * argv[])
     return EXIT_FAILURE;
   }
 
-  using PixelType = short;
+  using PixelType = unsigned char;
   constexpr int Dimension = 3;
   using ImageType = itk::Image<PixelType, Dimension>;
 
