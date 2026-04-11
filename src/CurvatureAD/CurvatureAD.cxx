@@ -20,6 +20,21 @@ int main (int argc, char * argv[])
   std::cout << "time step: " << timeStep << std::endl;
   std::cout << "iterations: " << iterations << std::endl;
 
+  if(timeStep <= 0){
+    std::cout << "ERROR: Invalid time step: " << timeStep << std::endl;
+    return EXIT_FAILURE;
+  }
+
+  if(conductance <= 0){
+    std::cout << "ERROR: Invalid conductance: " << conductance << std::endl;
+    return EXIT_FAILURE;
+  }
+
+  if(iterations <= 0){
+    std::cout << "ERROR: Invalid iteration number: " << iterations << std::endl;
+    return EXIT_FAILURE;
+  }
+  
   using PixelType = float;
   constexpr int Dimension = 3;
   using ImageType = itk::Image<PixelType, Dimension>;
