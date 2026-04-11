@@ -20,12 +20,12 @@ int main (int argc, char * argv[])
   std::cout << "sigma 2: " << sigma2 << std::endl;
 
   if(sigma1 == sigma2){
-    std::cout << "sigma1 (" << sigma1 << ") and sigma2 (" << sigma2 <<") cannot be equal" << std::endl;
+    std::cout << "ERROR: Sigma1 (" << sigma1 << ") and Sigma2 (" << sigma2 <<") cannot be equal" << std::endl;
     return EXIT_FAILURE;
   }
 
   if(sigma1 <= 0 || sigma2 <= 0){
-    std::cout <<"Sigma1 (" << sigma1 << ") or Sigma2 (" << sigma2 << ") is less than zero" << std::endl;
+    std::cout <<"ERROR: Sigma1 (" << sigma1 << ") or Sigma2 (" << sigma2 << ") is less than zero" << std::endl;
     return EXIT_FAILURE;
   }
 

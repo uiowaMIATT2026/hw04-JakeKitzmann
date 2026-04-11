@@ -16,6 +16,11 @@ int main (int argc, char * argv[])
   std::cout << "The input volume is: " << inputVolume << std::endl;
   std::cout << "The output volume is: " << outputVolume << std::endl;
 
+  if(sigma < 0){
+    std::cout "ERROR: Sigma (" << sigma << ") is less than zero" std::endl;
+    return EXIT_FAILURE;
+  }
+
   using PixelType = short;
   constexpr int Dimension = 3;
   using ImageType = itk::Image<PixelType, Dimension>;
