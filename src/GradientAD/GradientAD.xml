@@ -35,14 +35,14 @@
         <label>anisoParam</label>
         <description>Gradient based anisotropic diffusion parameters</description>
         <double>
-            <name>Conductance</name>
+            <name>conductance</name>
             <longflag>conductance</longflag>
             <label>conductance</label>
             <description>The lower the value of conductance, the more strongly the filter preserves the original image's light/dark boundaries</description>
             <default>1.0</default>
         </double>
         <double>
-            <name>Time Step</name>
+            <name>timeStep</name>
             <longflag>timeStep</longflag>
             <label>time steps</label>
             <description>Adjust delta t in the equation given at https://docs.itk.org/projects/doxygen/en/stable/classitk_1_1AnisotropicDiffusionFunction.html. 
